@@ -7,7 +7,7 @@
       </v-card-title>
       <v-data-table :headers="headers" :items="filteredData" :items-per-page="25"  @click:row="fShowDetails">
          
-        <template v-slot:[`item.flags`]="{ item }">
+        <template v-slot:[`item.flags`]="{ item }"> 
           <a href=""  @click:row="fShowDetails" data-toggle="modal" data-target="#exampleModal" >
             <img :src="item.flags.png" alt="Item Image" width="50px"/>
           </a>   
